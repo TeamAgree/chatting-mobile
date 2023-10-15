@@ -1,3 +1,5 @@
+import 'package:riverpod_annotation/riverpod_annotation.dart';
+
 class UserDetailResponse {
   final String id;
   final String pw;
