@@ -1,6 +1,6 @@
 class UserInfo {
-  final String userId;
-  final String password;
+  final String id;
+  final String pw;
   final String name;
   final String nickName;
   final String birth;
@@ -14,8 +14,8 @@ class UserInfo {
   final String updatedBy;
 
   UserInfo({
-    required this.userId,
-    required this.password,
+    required this.id,
+    required this.pw,
     required this.name,
     required this.nickName,
     required this.birth,
@@ -31,8 +31,8 @@ class UserInfo {
 
   factory UserInfo.fromJson(Map<String, dynamic> json) {
     return UserInfo(
-      userId: json['userId'],
-      password: json['password'],
+      id: json['id'],
+      pw: json['pw'],
       name: json['name'],
       nickName: json['nickName'],
       birth: json['birth'],
@@ -49,8 +49,8 @@ class UserInfo {
 
   Map<String, dynamic> toJson() {
     return {
-      'userId': userId,
-      'password': password,
+      'id': id,
+      'pw': pw,
       'name': name,
       'nickName': nickName,
       'birth': birth,
